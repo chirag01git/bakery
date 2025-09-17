@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bakehouse</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: #fffdf7;
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: #f8c471;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav h1 {
+      color: #4a2c2a;
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 12px;
+      color: #4a2c2a;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero */
+    .hero {
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+      background: url('https://images.unsplash.com/photo-1608198093002-ad4e005484d6?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    /* Products */
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .container h2 {
+      text-align: center;
+      color: #a04000;
+      margin-bottom: 25px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 15px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      color: #a04000;
+      margin-bottom: 8px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f8c471;
+      margin-top: 40px;
+      color: #4a2c2a;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h1>The Bakehouse</h1>
+    <div>
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">Specials</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h2>Welcome to The Bakehouse</h2>
+    <p>Fresh, tasty, and baked to perfection!</p>
+  </div>
+
+  <!-- Products -->
+  <div class="container">
+    <h2>Our Menu</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://sallysbakingaddiction.com/wp-content/uploads/2017/06/moist-chocolate-cupcakes-5.jpg" alt="Cupcakes">
+        <h3>Cupcakes</h3>
+        <p>Soft and colorful with creamy frosting.</p>
+      </div>
+      <div class="card">
+        <img src="https://inbloombakery.com/wp-content/uploads/2022/04/chocolate-drip-cake-featured-image.jpg" alt="Chocolate Cake">
+        <h3>Chocolate Cake</h3>
+        <p>Rich and moist with layers of delight.</p>
+      </div>
+      <div class="card">
+        <img src="https://thumbs.dreamstime.com/b/bread-cut-14027607.jpg" alt="Bread">
+        <h3>Fresh Bread</h3>
+        <p>Golden crust and soft inside.</p>
+      </div>
+      <div class="card">
+        <img src="https://deliciousmadeeasy.com/wp-content/uploads/2018/04/chocoholic-cold-brew-coffee-1-of-1-7-scaled.jpg" alt="Cold Coffee">
+        <h3>Cold Coffee</h3>
+        <p>Flaky layers with buttery goodness.</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkTXwkP7mLLxhwXxHzER6xEzjsaO-FHakUwA&s" alt="Cookies">
+        <h3>Cookies</h3>
+        <p>Crispy outside, gooey inside.</p>
+      </div>
+      <div class="card">
+        <img src="https://recipesbyclare.com/assets/images/1737386432736-a60cnxu8.webp" alt="Donuts">
+        <h3>Donuts</h3>
+        <p>Sweet rings topped with icing.</p>
+      </div>
+      <div class="card">
+        <img src="https://static01.nyt.com/images/2024/12/05/multimedia/SS-Chocolate-Banana-Muffins-jfvl/SS-Chocolate-Banana-Muffins-jfvl-mediumSquareAt3X.jpg" alt="Muffins">
+        <h3>Muffins</h3>
+        <p>Perfect for breakfast or snacks.</p>
+      </div>
+      <div class="card">
+        <img src="https://thescranline.com/wp-content/uploads/2024/09/CHOOCLATE-MACARONS-S-02.jpg" alt="Macarons">
+        <h3>Macarons</h3>
+        <p>Colorful bites with creamy filling.</p>
+      </div>
+      <div class="card">
+        <img src="https://www.recipetineats.com/tachyon/2022/11/Apple-Pie_8.jpg?resize=500%2C500" alt="Pie">
+        <h3>Apple Pie</h3>
+        <p>Classic dessert with cinnamon apples.</p>
+      </div>
+      <div class="card">
+        <img src="https://bakewithshivesh.com/wp-content/uploads/2022/02/IMG_5172-scaled.jpg" alt="Cheesecake">
+        <h3>Cheesecake</h3>
+        <p>Rich, creamy, and smooth.</p>
+      </div>
+      <div class="card">
+        <img src="https://bakingamoment.com/wp-content/uploads/2020/06/IMG_8813-bagel-recipe.jpg" alt="Bagels">
+        <h3>Bagels</h3>
+        <p>Freshly baked with a chewy texture.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.ytimg.com/vi/-ktkATXlRiU/maxresdefault.jpg" alt="Pastries">
+        <h3>Pastries</h3>
+        <p>Sweet and buttery treats.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 The Bakehouse | All rights reserved
+  </footer>
+</body>
+</html>
